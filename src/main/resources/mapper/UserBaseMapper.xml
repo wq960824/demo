@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserBaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.UserBase">
+        <id column="uid" property="uid" />
+        <result column="user_name" property="userName" />
+        <result column="mobile" property="mobile" />
+        <result column="pass" property="pass" />
+        <result column="salt" property="salt" />
+        <result column="is_enable" property="isEnable" />
+        <result column="expire_time" property="expireTime" />
+        <result column="user_cate" property="userCate" />
+        <result column="wrong_times" property="wrongTimes" />
+        <result column="time_h" property="timeH" />
+        <result column="time_l" property="timeL" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        uid, user_name, mobile, pass, salt, is_enable, expire_time, user_cate, wrong_times, time_h, time_l
+    </sql>
+
+</mapper>

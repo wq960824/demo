@@ -1,8 +1,10 @@
 package com.example.demo.common;
 
-import com.example.demo.enity.Code.StatusCode;
+
+import com.example.demo.entity.Code.StatusCode;
 
 public class RT {
+
     public String code;
 
     public String message;

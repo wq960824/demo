@@ -1,7 +1,9 @@
 package com.example.demo.common;
 
+
+import com.example.demo.entity.Code.StatusCode;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.demo.enity.Code.StatusCode;
+
 
 public class RTP<T> extends Page<T> {
     public String code;
@@ -17,4 +19,6 @@ public class RTP<T> extends Page<T> {
         this.code = code;
         this.message = message;
     }
+
+
 }

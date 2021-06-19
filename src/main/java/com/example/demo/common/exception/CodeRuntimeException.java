@@ -1,6 +1,6 @@
 package com.example.demo.common.exception;
 
-public class CodeRuntimeException extends RuntimeException{
+public class CodeRuntimeException extends RuntimeException {
 
     private String code;
 

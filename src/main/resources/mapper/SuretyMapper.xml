@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.SuretyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Surety">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="surety_name" property="suretyName" />
+        <result column="surety_mobile" property="suretyMobile" />
+        <result column="mobile_service_password" property="mobileServicePassword" />
+        <result column="relation" property="relation" />
+        <result column="surety_person_id" property="suretyPersonId" />
+        <result column="fids" property="fids" />
+        <result column="surety_census" property="suretyCensus" />
+        <result column="surety_addr" property="suretyAddr" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, uid, surety_name, surety_mobile, mobile_service_password, relation, surety_person_id, fids, surety_census, surety_addr
+    </sql>
+
+</mapper>

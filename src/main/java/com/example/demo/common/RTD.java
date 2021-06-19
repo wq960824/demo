@@ -1,10 +1,14 @@
 package com.example.demo.common;
 
-import com.example.demo.enity.Code.StatusCode;
 
-public class RTD <T>{
+import com.example.demo.entity.Code.StatusCode;
+
+public class RTD<T> {
+
     public String code;
+
     public String message;
+
     public T data;
 
     public RTD(T data) {
